@@ -1,5 +1,9 @@
 import {teachersData} from "./teachers.js"
-import {studentsData} from "./students.js"
+// import {students} from "./students.js"
 import {header} from "./header.js"
-import {footer} from "./footer.js"
+import{render} from "./render.js"
 
+render ("#script",header,teachersData)
+
+
+document.querySelector("#home-link").addEventListener("click",()=> {render("#content",content)})
