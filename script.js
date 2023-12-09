@@ -6,4 +6,4 @@ import{render} from "./render.js"
 render ("#script",header,teachersData)
 
 
-document.querySelector("#home-link").addEventListener("click",()=> {render("#content",content)})
+document.querySelector("#home-link").addEventListener("click",()=> {render("#content",content)}) 
