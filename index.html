@@ -11,54 +11,50 @@
 </html>
 </head>
 <body>
-    <main>
-        <!-- navbar start -->
-        <div id="script"></div>
-<div id="content"></div>
-          <!-- started icon -->
-          <div class="icon-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-            </svg>
-        </div>
- <!-- ended icon -->
- <h1>Welcome</h1>
- <div class="container mt-5">
-  <div class="row mx-auto">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Number of Students</h5>
-        <p class="card-text"></p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Number of Teachers</h5>
-        <p class="card-text"></p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Number of Classes</h5>
-        <p class="card-text"></p>
-      </div>
-    </div>
-  </div>
-</div>
-
- <!-- started footer -->
-          <div class="card text-center fixed-bottom bg-dark-subtle p-3">
-            <div class="card-body">
-              <h5 class="card-title">Hicoders 2023/2024 LMS </h5>
-              <p class="card-text"> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer text-body-secondary">
-             About Us | Contact
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LMS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <ul class="nav">
+              <li class="nav-item"><a aria-selected="true" aria-controls="home" type="button" role="tab" data-bs-target="#home" data-bs-toggle="tab" class="nav-link active  text-bg-light" id="nav-home-tab" aria-current="page" href="#">Home</a></li>
+              <li class="nav-item"><a aria-selected="false" aria-controls="class" type="button"  role="tab" data-bs-target="#class" data-bs-toggle="tab" class="nav-link text-bg-light" id="nav-class-tab" href="#">CLasses</a></li>
+              <li class="nav-item"><a  aria-selected="false" aria-controls="student" type="button" role="tab" data-bs-target="#student" data-bs-toggle="tab" class="nav-link  text-bg-light" id="nav-students-tab" href="#">Students</a></li>
+              <li class="nav-item"><a aria-selected="false" aria-controls="teacher" type="button" role="tab" data-bs-target="#teacher" data-bs-toggle="tab" class="nav-link  text-bg-light" id="nav-teachers-tab" href="#">Teachers</a></li>
+            </ul>
             </div>
           </div>
-        <!-- footer end -->
+        </div>
+      </nav>
+    </header>
+    <main>
+<div class="container">
+  <div class="row" style="min-height: 35rem;">
+    <div class="tab-content col">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab"><h1>Home</h1></div>
+      <div class="tab-pane fade" id="class" role="tabpanel" aria-labelledby="nav-class-tab"><h1>Class</h1></div>
+      <div class="tab-pane fade" id="student" role="tabpanel" aria-labelledby="nav-students-tab"><h1>Students</h1></div>
+      <div class="tab-pane fade" id="teacher" role="tabpanel" aria-labelledby="nav-teachers-tab"><h1>Teachers</h1></div>
+    </div>
+
+  </div>
+</div>
     </main>
+    <footer class="bg-body-tertiary text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3"  style="background-color: rgba(0, 0, 0, 0.05);"><h1>Hicoders </h1></div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2020 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+      </footer>
+
+  
     <script type="module" src="./header.js"></script>
     <script type="module" src="./script.js"></script>
     <script type="module" src="./teachers.js"></script> 
