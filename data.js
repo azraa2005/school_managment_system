@@ -19,3 +19,15 @@ export const teachers=[{
     profession: "AWS Expert",
 }
 ]
+
+export const studentsData=[{
+    name:"Max",
+    surName:"Hermann",
+},
+
+{
+    name:"Anthony",
+    surName:"Egbe"
+}
+
+]
