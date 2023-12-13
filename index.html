@@ -6,50 +6,158 @@
     <title>Document</title>
     <!doctype html>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="style.css">
   </body>
 </html>
 </head>
 <body>
-    <main>
-        <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">LMS</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">CLasses</a>
-                  <a class="nav-link" href="#">Students</a>
-                  <a class="nav-link" href="#">Teachers</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-        <!-- footer start -->
-        <!-- <footer class="bg-body-tertiary text-center text-lg-start fixed-bottom">
-            <div class="text-center p-3" style="background-color: gray">
-                About us | Contact
-            </div>
-          </footer> -->
-          <div class="card text-center fixed-bottom bg-dark-subtle">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer text-body-secondary">
-             About Us | 
+  <div class="icon-container">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+    </svg>
+</div>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LMS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <ul class="nav">
+              <li class="nav-item"><a aria-selected="true" aria-controls="home" type="button" role="tab" data-bs-target="#home" data-bs-toggle="tab" class="nav-link active  text-bg-light" id="nav-home-tab" aria-current="page" href="#">Home</a></li>
+              <li class="nav-item"><a aria-selected="false" aria-controls="class" type="button"  role="tab" data-bs-target="#class" data-bs-toggle="tab" class="nav-link text-bg-light" id="nav-class-tab" href="#">CLasses</a></li>
+              <li class="nav-item"><a  aria-selected="false" aria-controls="student" type="button" role="tab" data-bs-target="#student" data-bs-toggle="tab" class="nav-link  text-bg-light" id="nav-students-tab" href="#">Students</a></li>
+              <li class="nav-item"><a aria-selected="false" aria-controls="teacher" type="button" role="tab" data-bs-target="#teacher" data-bs-toggle="tab" class="nav-link  text-bg-light" id="nav-teachers-tab" href="#">Teachers</a></li>
+            </ul>
             </div>
           </div>
-        <!-- footer end -->
+        </div>
+      </nav>
+    </header>
+    <main>
+<div class="container">
+  <div class="row" style="min-height: 35rem;">
+    <div class="tab-content col">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab"><h1>Home</h1>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Number Teachers</h5>
+          
+          </div>
+        </div><div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Number Students</h5>
+          </div>
+        </div><div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Number Classes</h5>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="class" role="tabpanel" aria-labelledby="nav-class-tab"><h1>Class</h1>
+      
+      </div>
+      <div class="tab-pane fade" id="student" role="tabpanel" aria-labelledby="nav-students-tab"><h1>Students</h1> 
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Add Student
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="first name">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="last name">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="text" class="form-label">Department</label>
+          <input type="text" class="form-control" id="depart" placeholder="Department">
+        </div>
+        <div class="mb-3">
+          <label for="average" class="form-label">Average</label>
+          <input type="number" class="form-control" id="average" placeholder="Average"></input>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="saveStudentBtn">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <!-- start teachers -->
+      <div class="tab-pane fade" id="teacher" role="tabpanel" aria-labelledby="nav-teachers-tab"><h1>Teachers</h1>
+        <button type="button" id="addTeacher" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teacherModal">
+          Add Teacher
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="teacherModal" tabindex="-1" aria-labelledby="addTeacher" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="first" placeholder="first name">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="last" placeholder="last name">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="text" class="form-label">Department</label>
+                  <input type="text" class="form-control" id="department" placeholder="Department">
+                </div>
+                <div class="mb-3">
+                  <label for="description" class="form-label">Description</label>
+                  <input type="text" class="form-control" id="description" placeholder="Description"></input>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveTeacherBtn">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </main>
+    <footer class="bg-body-tertiary text-center text-lg-start">
+      <div class="text-center p-3"  style="background-color: rgba(126, 20, 20, 0.729);"><h1>Hicoders </h1></div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.715);">
+      © 2023
+      <a class="text-body">hicoders</a>
+      </div>
+      </footer>
+
+   <script type="module" src="students.js"></script>
+    <script type="module" src="./teachers.js"></script> 
+    <script type="module" src="./data.js"></script>
+    <script type="module" src="./saveBtn.js"></script>
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
