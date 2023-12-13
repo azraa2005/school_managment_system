@@ -42,10 +42,10 @@
   <div class="row" style="min-height: 35rem;">
     <div class="tab-content col">
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab"><h1>Home</h1></div>
-      <div class="tab-pane fade" id="class" role="tabpanel" aria-labelledby="nav-class-tab"><h1>Class</h1></div>
+      <div class="tab-pane fade" id="class" role="tabpanel" aria-labelledby="nav-class-tab"><h1>Class</h1>
+      
+      </div>
       <div class="tab-pane fade" id="student" role="tabpanel" aria-labelledby="nav-students-tab"><h1>Students</h1> 
-        <!-- <button type="button" class="btn btn-primary">Add</button> -->
-        <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Add Student
 </button>
@@ -79,26 +79,63 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="savebtn">Save</button>
+        <button type="button" class="btn btn-primary" id="saveStudentBtn">Save</button>
       </div>
     </div>
   </div>
 </div>
       </div>
-      <div class="tab-pane fade" id="teacher" role="tabpanel" aria-labelledby="nav-teachers-tab"><h1>Teachers</h1></div>
+      <!-- start teachers -->
+      <div class="tab-pane fade" id="teacher" role="tabpanel" aria-labelledby="nav-teachers-tab"><h1>Teachers</h1>
+        <button type="button" id="addTeacher" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teacherModal">
+          Add Teacher
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="teacherModal" tabindex="-1" aria-labelledby="addTeacher" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="first" placeholder="first name">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="last" placeholder="last name">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="text" class="form-label">Department</label>
+                  <input type="text" class="form-control" id="department" placeholder="Department">
+                </div>
+                <div class="mb-3">
+                  <label for="description" class="form-label">Average</label>
+                  <input type="text" class="form-control" id="description" placeholder="Description"></input>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveTeacherBtn">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
   </div>
 </div>
     </main>
     <footer class="bg-body-tertiary text-center text-lg-start">
-      <!-- Copyright -->
       <div class="text-center p-3"  style="background-color: rgba(126, 20, 20, 0.729);"><h1>Hicoders </h1></div>
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.715);">
       © 2023
       <a class="text-body">hicoders</a>
       </div>
-      <!-- Copyright -->
       </footer>
 
    <script type="module" src="students.js"></script>
